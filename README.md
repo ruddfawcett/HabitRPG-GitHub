@@ -102,9 +102,3 @@ Just to double check, your `scripts/connect.php` script should look like this af
   $db= new PDO("mysql:host=".$hostname.";dbname=".$dbname.";charset=utf8", $username, $password);
 ?>
 ```
-
-##Screenshot:
-
-###View current stats for your GitHub repositories, including how many past commits you've pushed, as well as how many votes HabitRPG-GitHub has executed for you:
-
-![Screenshot](http://oi45.tinypic.com/14c9oq9.jpg)
