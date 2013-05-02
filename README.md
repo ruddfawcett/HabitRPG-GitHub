@@ -1,4 +1,4 @@
-#[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github)
+#[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github) - DEPRECATED: NO LONGER MAINTAINED!
 ========
 Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as [Bootstrap](http://getbootstrap.com) and a little [jQuery](http://nodejs.org/).
 
