@@ -1,10 +1,13 @@
-#[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github) - No Longer Maintained!
+#[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github)
 
-Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as [Bootstrap](http://getbootstrap.com) and a little [jQuery](http://nodejs.org/).
+Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as [Bootstrap](http://getbootstrap.com) and a little jQuery).
+
+
+###No longer maintained, however, if requested, I'll resume work on it.
 
 ##Purpose:
 
-If you love playing HabitRPG, and love using GitHub too, why not sync them?  **For every x number of commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!**  This way, your hard work coding pays off with your HabitRPG account.  
+If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***For every x number of commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!***  This way, your hard work coding pays off with your HabitRPG account.  
 
 *<i>Both of the "x" values are configurable in when you add a repository to your account.</i>
 
@@ -20,13 +23,13 @@ If you love playing HabitRPG, and love using GitHub too, why not sync them?  **F
  * **scripts**
   * **js**
     * `submission.js`
-    * `HabitRPG_PHP.ph`
-    * `connect.php`
-    * `logout.php`
-    * `process.php`
-    * `serviceFunctions.php`
-    * `serviceHook.php`
-    * `session.php`
+  * `HabitRPG_PHP.ph`
+  * `connect.php`
+  * `logout.php`
+  * `process.php`
+  * `serviceFunctions.php`
+  * `serviceHook.php`
+  * `session.php`
  * **styles**
   * `main.css`
  * **views**
