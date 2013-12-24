@@ -13,28 +13,31 @@ If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***
 
 ##File Structure:
 
- * `index.php`
- * `about.php`
- * `changelog.php`
- * `myaccount.php`
- * `README.md`
- * **mysql**
-  * `import.sql`
- * **scripts**
-  * **js**
-    * `submission.js`
-  * `HabitRPG_PHP.ph`
-  * `connect.php`
-  * `logout.php`
-  * `process.php`
-  * `serviceFunctions.php`
-  * `serviceHook.php`
-  * `session.php`
- * **styles**
-  * `main.css`
- * **views**
-  * `account.php`
-  * `login.php`
+```
+HabitRPG-GitHub/
+├── index.php
+├── about.php
+├── changelog.php
+├── myaccount.php
+├── README.md
+├── mysql/
+│   └── import.sql
+├── scripts/
+│   ├── js/
+│   |   └── submission.js
+│   ├── HabitRPG_PHP.ph
+│   ├── connect.php
+│   ├── logout.php
+│   ├── process.php
+│   ├── serviceFunctions.php
+│   ├── serviceHook.php
+│   └── session.php
+├── styles/
+│   └── main.css
+└── views/
+    ├── account.php
+    └── login.php
+```
 
 ##How to run locally:
 
