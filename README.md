@@ -20,6 +20,7 @@ HabitRPG-GitHub/
 ├── changelog.php
 ├── myaccount.php
 ├── README.md
+├── LICENSE
 ├── mysql/
 │   └── import.sql
 ├── scripts/
