@@ -51,7 +51,7 @@
         <div class="span4">
           <h2>Find Me</h2>
           <p>Find me on GitHub! I'm completely open sourced, just like HabitRPG!  Fork me, watch me, send me a pull request, open an issue!  It all helps! Be sure to star HabitRPG while you're at it!  Need private help? <a href="mailto:rudd.fawcett@gmail.com">Email me.</a></p>
-          <p><a class="btn" href="http://github.com/ruddfawcett/habitrpg-github">Visit repository &raquo;</a></p>
+          <p><a class="btn" href="http://github.com/HabitRPG/habitrpg-github">Visit repository &raquo;</a></p>
         </div>
       </div>
 
