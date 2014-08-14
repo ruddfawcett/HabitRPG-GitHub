@@ -2,9 +2,6 @@
 
 Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as [Bootstrap](http://getbootstrap.com) and a little jQuery).
 
-
-###No longer maintained, however, if requested, I'll resume work on it.
-
 ##Purpose:
 
 If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***For every x number of commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!***  This way, your hard work coding pays off with your HabitRPG account.  
@@ -99,8 +96,8 @@ Just to double check, your `scripts/connect.php` script should look like this af
   $hostname = "{Path to MySQL database}";
   $username = "{MySQL database username, most default to root";
   $password = "{MySQL database password, most default to no password}";
-  $dbname = "{Name of the database you imported the SQL into, I use HabitRPGGitHub}";      
-      
+  $dbname = "{Name of the database you imported the SQL into, I use HabitRPGGitHub}";
+
   //Starts new PDO instance - mysql_query_* is going to be depracated, so whole site is built on PDO...
   $db= new PDO("mysql:host=".$hostname.";dbname=".$dbname.";charset=utf8", $username, $password);
 ?>
