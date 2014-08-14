@@ -22,8 +22,8 @@
             <div class="container">
               <ul class="nav">
                 <li><a href="index.php">Home</a></li>
- 				<li><a href="changelog.php">Changelog</a></li>
-                <li><a href="//github.com/ruddfawcett/HabitRPG-GitHub">Downloads</a></li>
+								<li><a href="changelog.php">Changelog</a></li>
+                <li><a href="//github.com/HabitRPG/HabitRPG-GitHub">Downloads</a></li>
                 <li><a href="about.php">About</a></li>
                 <li class="active"><a href="#">My Account</a></li>
               </ul>
@@ -32,7 +32,7 @@
         </div><!-- /.navbar -->
       </div>
 
-		<?php 
+		<?php
 			if(array_key_exists('username', $_SESSION)) {
 				require('views/account.php');
 			}

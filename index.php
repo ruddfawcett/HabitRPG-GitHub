@@ -18,7 +18,7 @@
               <ul class="nav">
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="changelog.php">Changelog</a></li>
-                <li><a href="//github.com/ruddfawcett/HabitRPG-GitHub">Downloads</a></li>
+                <li><a href="//github.com/HabitRPG/HabitRPG-GitHub">Downloads</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="myaccount.php">My Account</a></li>
               </ul>
