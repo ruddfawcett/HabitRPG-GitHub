@@ -10,7 +10,7 @@
  -->
 
 <?php
-	$stmt = $db->prepare("SELECT * FROM userInfo WHERE forUser=:username");
+	$stmt = $db->prepare("SELECT * FROM ".MYSQL_PREFIX."userInfo WHERE forUser=:username");
 	$stmt->execute(array(':username' => $_SESSION['username']));
 	$row_count = $stmt->rowCount(); ?>
 	<?php if ($row_count > 0): ?>
