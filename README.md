@@ -6,32 +6,7 @@ Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP A
 
 If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***For every x number of commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!***  This way, your hard work coding pays off with your HabitRPG account.  
 
-*<i>Both of the "x" values are configurable in when you add a repository to your account.</i>
-
-##File Structure:
-
- * `index.php`
- * `about.php`
- * `changelog.php`
- * `myaccount.php`
- * `README.md`
- * **mysql**
-  * `import.sql`
- * **scripts**
-  * **js**
-    * `submission.js`
-  * `HabitRPG_PHP.ph`
-  * `connect.php`
-  * `logout.php`
-  * `process.php`
-  * `serviceFunctions.php`
-  * `serviceHook.php`
-  * `session.php`
- * **styles**
-  * `main.css`
- * **views**
-  * `account.php`
-  * `login.php`
+*<i>Both of the "x" values are configurable in when you add a repository to your account.</i>`
 
 ##How to run locally:
 
