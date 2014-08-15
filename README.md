@@ -63,19 +63,6 @@ upload your credentials.
   </tr>
 </table>
 
-Run `scripts/setup.php` in a browser or on the command line. Alternatively, you can
-use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
-service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
-**Don't forget to start MySQL on your localhost, though!**
-
-###PHP:
-
-Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should
-arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from improperly
-setting up the database!  Be sure you have done that first!
-
-
-###Double check:
 Just to double check, your `scripts/connect.php` script should look like this after you have entered the
 values:
 
@@ -86,7 +73,17 @@ values:
   $password = "{MySQL database password, most default to no password}";
   $dbname = "{Name of the database you imported the SQL into, I use HabitRPGGitHub}";
 
-  //Starts new PDO instance - mysql_query_* is going to be depracated, so whole site is built on PDO...
   $db= new PDO("mysql:host=".$hostname.";dbname=".$dbname.";charset=utf8", $username, $password);
 ?>
 ```
+
+Run `scripts/setup.php` in a browser or on the command line. Alternatively, you can
+use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
+service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
+**Don't forget to start MySQL on your localhost, though!**
+
+###PHP:
+
+Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should
+arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from improperly
+setting up the database!  Be sure you have done that first!
