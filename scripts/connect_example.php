@@ -1,4 +1,8 @@
 <?php
+	/* Save this file as connect.php and input your credentials below.
+	 * Don't worry, it's in the .gitignore so you you won't accidentally push it.
+	 */
+
 	$hostname = "";
 	$username = "";
 	$password = "";

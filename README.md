@@ -37,9 +37,13 @@ If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***
 
 ###MySQL:
 
-Use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  **Don't forget to start MySQL on your localhost, though!**
+Use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
+service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
+**Don't forget to start MySQL on your localhost, though!**
 
-The process above is fairly straight forward, and all you know have to do to be able to interact with the database is to set your host values in `scripts/connect.php`.
+The process above is fairly straight forward, and all you know have to do to be able to interact with
+the database is to copy `scripts/connect_example.php` to `scripts/connect.php` and set your host
+values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file.
 
 **Table Structure, users:**
 <table>
