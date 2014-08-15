@@ -1,10 +1,14 @@
 #[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github)
 
-Connect and sync your HabitRPG and GitHub accounts.  Built on my [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as [Bootstrap](http://getbootstrap.com) and a little jQuery).
+Connect and sync your HabitRPG and GitHub accounts.  Built on Rudd fawcett's
+[HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as
+[Bootstrap](http://getbootstrap.com) and a little jQuery).
 
 ##Purpose:
 
-If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***For every x number of commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!***  This way, your hard work coding pays off with your HabitRPG account.  
+If you love playing HabitRPG, and love using GitHub too, why not sync them?  ***For every x number of
+commits you push to a repository, you will get x number of upvotes* on your HabitRPG account!***  This
+way, your hard work coding pays off with your HabitRPG account.  
 
 *<i>Both of the "x" values are configurable in when you add a repository to your account.</i>`
 
@@ -64,11 +68,14 @@ values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file.
 
 ###PHP:
 
-Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from inproperly setting up the database!  Be sure you have done that first!
+Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should
+arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from improperly
+setting up the database!  Be sure you have done that first!
 
 
 ###Double check:
-Just to double check, your `scripts/connect.php` script should look like this after you have entered the values:
+Just to double check, your `scripts/connect.php` script should look like this after you have entered the
+values:
 
 ```php
 <?php
