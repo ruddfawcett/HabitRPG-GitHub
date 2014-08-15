@@ -4,15 +4,15 @@
 
 <h3 class="section-header" id='setup'>So... what's happening?</h3>
 		<p class='lead'>Well, behind the scenes, every time you commit to your repository with the service hook, you gain XP!</p>
-<!-- 
-<h3 class="section-header" id='setup'>Is that it?</h3>		
+<!--
+<h3 class="section-header" id='setup'>Is that it?</h3>
 		<p class='lead'>Don't worry, that's not it! Soon, I will be implementing some custom parameters for XP, among other things.  If you would ever like to help, feel free to fork HabitRPG-GitHub!  I accept pull requests. :-)</p>
  -->
- 
+
 <?php
-	$stmt = $db->prepare("SELECT * FROM userInfo WHERE forUser=:username");
+	$stmt = $db->prepare("SELECT * FROM ".MYSQL_PREFIX."userInfo WHERE forUser=:username");
 	$stmt->execute(array(':username' => $_SESSION['username']));
-	$row_count = $stmt->rowCount(); ?>		
+	$row_count = $stmt->rowCount(); ?>
 	<?php if ($row_count > 0): ?>
 	  <div id="myModal" class="modal hide fade in" aria-hidden="true">
 		 <div class="modal-header">
@@ -53,9 +53,9 @@
 		 </div>
 		 </form>
 	  </div>
-	  
+
 <h3 class='section-header' id='setup'>My Stats:<span class='pull-right'><a href='#myModal' data-toggle='modal' class='btn btn-success'>Add repository</a></span></h3>
-	
+
 	<table class="table table-striped table-bordered">
 	  <thead>
 		<tr>
@@ -89,21 +89,21 @@
 	?>
 	  </tbody>
 	</table>
-	
+
 	<?php else: ?>
 <h3 class='section-header' id='setup'>My Stats:</h3>
 		<p class='lead'>You don't yet have any repositories!  To connect one with your account, see <a href="about.php#setup">this guide</a>!</p>
 	<?php endif ?>
-<h3 class="section-header" id='setup'>Custom URL Scheme:</h3>	
+<h3 class="section-header" id='setup'>Custom URL Scheme:</h3>
 	<div class='well' style='margin:0;'><strong style='font-size: 17px;'>http://ruddfawcett.com/habitrpg-github/scripts/serviceHook.php?username=<?php echo $_SESSION['username'];?>&token=<?php echo $_SESSION['token']; ?></strong></div><br>
-	
-<h3 class="section-header" id='setup'>Note:</h3>		
+
+<h3 class="section-header" id='setup'>Note:</h3>
 		<p class='lead'>If you would like more features to happen, follow or star the project, or open an issue!  This is how I will know you want more from this!  Thanks!</p>
 
 
 <div style='text-align: center;'>
-	<iframe src="http://ghbtns.com/github-btn.html?user=ruddfawcett&repo=HabitRPG-GitHub&type=watch&count=true&size=large"
+	<iframe src="http://ghbtns.com/github-btn.html?user=HabitRPG&repo=HabitRPG-GitHub&type=watch&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-	<iframe src="http://ghbtns.com/github-btn.html?user=ruddfawcett&repo=HabitRPG-GitHub&type=fork&count=true&size=large"
+	<iframe src="http://ghbtns.com/github-btn.html?user=HabitRPG&repo=HabitRPG-GitHub&type=fork&count=true&size=large"
   allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
 </div>

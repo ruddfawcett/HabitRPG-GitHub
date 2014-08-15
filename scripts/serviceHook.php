@@ -2,29 +2,29 @@
 	require('connect.php');
 	require('serviceFunctions.php');
 	require_once('HabitRPG_PHP.php');
-	
+
 	if (array_key_exists('username',$_GET) && array_key_exists('token',$_GET)) {
-		$stmt = $db->prepare("SELECT * FROM users WHERE username=:username AND token=:token");
+		$stmt = $db->prepare("SELECT * FROM ".MYSQL_PREFIX."users WHERE username=:username AND token=:token");
 		$stmt->execute(array(':username' => $_GET['username'], ':token' => $_GET['token']));
-		$row_count = $stmt->rowCount();		
+		$row_count = $stmt->rowCount();
 		if ($row_count == 1) {
 			$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$resultsArray = $results[0];
 			$realName = $resultsArray['realName'];
 			$username = $resultsArray['username'];
 			$token = $resultsArray['token'];
-			
+
 			$hookArray = json_decode(file_get_contents('php://input'),true);
 			$repoName = $hookArray['repository']['name'];
-		
+
 			$commitArray = $hookArray['commits'];
-			
+
 			// $authorInfoName = array();
 			//$authorInfoUsername = array();
-			
+
 			$i=0;
-			
-			foreach ($commitArray as $commit) {		
+
+			foreach ($commitArray as $commit) {
 				if (!array_key_exists('name',$commit['committer']) && array_key_exists('username',$commit['committer'])) {
 					$i++;
 				}
@@ -35,7 +35,7 @@
 					$i++;
 				}
 			}
-			
+
 			if ($i > 0) {
 				newCommit($repoName,$username,$i,$token);
 			}
@@ -45,6 +45,6 @@
 		}
 	}
 	else {
-		header(' ', true, 400);		
+		header(' ', true, 400);
 	}
 ?>
