@@ -16,13 +16,10 @@ way, your hard work coding pays off with your HabitRPG account.
 
 ###MySQL:
 
-Use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
-service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
-**Don't forget to start MySQL on your localhost, though!**
-
 The process above is fairly straight forward, and all you know have to do to be able to interact with
 the database is to copy `scripts/connect_example.php` to `scripts/connect.php` and set your host
-values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file.
+values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file so you won't accidentally
+upload your credentials.
 
 **Table Structure, users:**
 <table>
@@ -65,6 +62,11 @@ values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file.
     <td>unique id for repo</td>
   </tr>
 </table>
+
+Run `scripts/setup.php` in a browser or on the command line. Alternatively, you can
+use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
+service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
+**Don't forget to start MySQL on your localhost, though!**
 
 ###PHP:
 

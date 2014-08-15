@@ -1,4 +1,6 @@
-<?php require('scripts/session.php'); ?>
+<?php
+require('scripts/session.php'); 
+?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
