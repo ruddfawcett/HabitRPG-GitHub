@@ -63,18 +63,15 @@ upload your credentials.
   </tr>
 </table>
 
-Just to double check, your `scripts/connect.php` script should look like this after you have entered the
-values:
+Just to double check, the relevant lines in your `scripts/connect.php` script
+should look like this after you have entered the values:
 
 ```php
-<?php
+  define("MYSQL_PREFIX","{Table prefix}");
   $hostname = "{Path to MySQL database}";
   $username = "{MySQL database username, most default to root";
   $password = "{MySQL database password, most default to no password}";
-  $dbname = "{Name of the database you imported the SQL into, I use HabitRPGGitHub}";
-
-  $db= new PDO("mysql:host=".$hostname.";dbname=".$dbname.";charset=utf8", $username, $password);
-?>
+  $dbname = "{Name of the database you're importing the data into}";
 ```
 
 Run `scripts/setup.php` in a browser or on the command line. Alternatively, you can
