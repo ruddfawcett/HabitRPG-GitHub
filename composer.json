@@ -1,0 +1,8 @@
+{
+    "name": "HabitRPG/HabitRPG-GitHub",
+    "description": "Connect HabitRPG to GitHub!",
+    "require": {
+        "php": ">=5.3.0",
+        "phpunit/phpunit": "4.2"
+    }
+}
