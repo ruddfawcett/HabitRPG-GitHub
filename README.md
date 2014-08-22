@@ -74,10 +74,8 @@ should look like this after you have entered the values:
   $dbname = "{Name of the database you're importing the data into}";
 ```
 
-Run `scripts/setup.php` in a browser or on the command line. Alternatively, you can
-use the SQL file located in `mysql/import.sql` to clone the database structure into a MySQL database
-service such as [SQLBuddy](http://sqlbuddy.com/) or [phpMyAdmin](http://www.phpmyadmin.net/home_page/).  
-**Don't forget to start MySQL on your localhost, though!**
+Run `scripts/setup.php` in a browser or on the command line after putting your credentials in scripts/connect.php.  
+If you're working locally don't forget to start MySQL first, though!**
 
 ###PHP:
 
