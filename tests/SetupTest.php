@@ -9,13 +9,15 @@
 namespace Tests;
 
 /**
- * This class tests basic functionality.
+ * This class tests setup.
+ *
+   WARNING: Don't run this if you already have things set up. It will destroy them.
  *
  * phpunit Tests/BasicTest
  *
  * @author Bradley Wogsland <bradley@wogsland.org>
  */
-class BasicTest
+class SetupTest
 extends \PHPUnit_Framework_TestCase
 {
   /**
