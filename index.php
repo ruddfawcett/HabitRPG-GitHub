@@ -1,4 +1,7 @@
-<?php require('scripts/header.php'); ?>
+<?php
+require('scripts/setup.php'); 
+require('scripts/header.php');
+?>
 	<body>
     <div class="container">
 

@@ -1,1 +1,8 @@
+# Personalization #
+###################
 scripts/connect.php
+
+# Composer #
+############
+composer.lock
+vendor/
