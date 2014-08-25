@@ -12,14 +12,26 @@ way, your hard work coding pays off with your HabitRPG account.
 
 *<i>Both of the "x" values are configurable in when you add a repository to your account.</i>`
 
-##How to run locally:
+##How to run it:
 
 ###MySQL:
 
 The process above is fairly straight forward, and all you know have to do to be able to interact with
 the database is to copy `scripts/connect_example.php` to `scripts/connect.php` and set your host
 values in `scripts/connect.php`. Don't worry, it's in the `.gitignore` file so you won't accidentally
-upload your credentials.
+upload your credentials. Just to double check, the relevant lines in your `scripts/connect.php` script
+should look like this after you have entered the values:
+
+```php
+  define("MYSQL_PREFIX","{Table prefix}");
+  $hostname = "{Path to MySQL database}";
+  $username = "{MySQL database username, most default to root";
+  $password = "{MySQL database password, most default to no password}";
+  $dbname = "{Name of the database you're importing the data into}";
+```
+
+The rest of the setup will happen automagically when you first open index.php.  
+If you're working locally don't forget to start MySQL first, though!**
 
 **Table Structure, users:**
 <table>
@@ -63,21 +75,7 @@ upload your credentials.
   </tr>
 </table>
 
-Just to double check, the relevant lines in your `scripts/connect.php` script
-should look like this after you have entered the values:
-
-```php
-  define("MYSQL_PREFIX","{Table prefix}");
-  $hostname = "{Path to MySQL database}";
-  $username = "{MySQL database username, most default to root";
-  $password = "{MySQL database password, most default to no password}";
-  $dbname = "{Name of the database you're importing the data into}";
-```
-
-Run `scripts/setup.php` in a browser or on the command line after putting your credentials in scripts/connect.php.  
-If you're working locally don't forget to start MySQL first, though!**
-
-###PHP:
+###PHP Local Setup:
 
 Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should
 arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from improperly

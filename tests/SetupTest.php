@@ -13,7 +13,8 @@ namespace Tests;
  *
    WARNING: Don't run this if you already have things set up. It will destroy them.
  *
- * phpunit Tests/BasicTest
+ * To run:
+ * phpunit Tests/SetupTest
  *
  * @author Bradley Wogsland <bradley@wogsland.org>
  */
