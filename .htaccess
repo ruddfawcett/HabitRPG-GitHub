@@ -1,3 +1,13 @@
+RewriteEngine On
+Options +FollowSymLinks
+RewriteBase /
+
+RewriteRule ^(.*)\.html$ affiliate/$1.php
+RewriteRule ^(.*)\.do$ affiliate/$1.php
+
+ErrorDocument 404 /
+ErrorDocument 403 /
+
 <Files "README.md">
 Order Allow,Deny
 Deny from all
