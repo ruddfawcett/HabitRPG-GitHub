@@ -1,5 +1,7 @@
-#[HabitRPG-GitHub](https://ruddfawcett.com/habitrpg-github)
+HabGitRPG
+=========
 
+<<<<<<< HEAD
 Connect and sync your HabitRPG and GitHub accounts.  Built on Rudd fawcett's
 [HabitRPG_PHP API class](https://github.com/ruddfawcett/HabitRPG_PHP) as well as
 [Bootstrap](http://getbootstrap.com) and a little jQuery).
@@ -80,3 +82,6 @@ If you're working locally don't forget to start MySQL first, though!**
 Start your PHP server on your computer, and then navigate to localhost/habitrpg-github, and you should
 arrive at the home screen if you have set it up properly.  Any `PDO` errors are a result from improperly
 setting up the database!  Be sure you have done that first!
+=======
+Connect and sync your HabitRPG and GitHub accounts.
+>>>>>>> master
